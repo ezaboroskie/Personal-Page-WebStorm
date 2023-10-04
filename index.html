@@ -18,7 +18,7 @@
     </script>
     <title>Eddie's Page</title>
 </head>
-<body>
+<body id="body-element">
 
 
 <!--Header contains logo and spans that will jump to the corresponding section when clicked-->
@@ -26,9 +26,9 @@
     <header id="header-container">
         <img id="logo-img" src="./assets/logo.png" alt="EZ-Solutions Logo">
         <div id="header-span-container">
-            <span>Home</span>
-            <span>Services</span>
-            <span>Contact</span>
+            <span id="span1">Home</span>
+            <span id="span2">Services</span>
+            <span id="span3">Contact</span>
         </div>
     </header>
 
@@ -36,6 +36,7 @@
 <!--This is the main content of the webpage excluding the header and footer-->
 
     <main id="main-content-container">
+        <div id="top-hidden"></div>
 
     <!--This video is set to autoplay on a loop. The CSS places the video behind the other elements with z index and js plays the video at .8 speed-->
 
@@ -114,7 +115,7 @@
                 </div>
             </div>
             <div id="form-container">
-                <form class="form" action="/our_post_route" method="post">
+                <form class="form" method="post">
                     <div id="label-input-container">
                         <label for="name-input">Name:</label>
                         <input type="text" name="name" id="name-input" >
