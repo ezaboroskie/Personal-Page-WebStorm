@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/486873a5b3.js" crossorigin="anonymous"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous">
+    </script>
+    <title>Eddie's Page</title>
+</head>
+<body>
+
+
+<!--Header contains logo and spans that will jump to the corresponding section when clicked-->
+
+    <header id="header-container">
+        <img id="logo-img" src="./assets/logo.png" alt="EZ-Solutions Logo">
+        <div id="header-span-container">
+            <span>Home</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </div>
+    </header>
+
+
+<!--This is the main content of the webpage excluding the header and footer-->
+
+    <main id="main-content-container">
+
+    <!--This video is set to autoplay on a loop. The CSS places the video behind the other elements with z index and js plays the video at .8 speed-->
+
+        <video id="background-video" autoplay loop muted>
+            <source src="assets/background-video.mp4" type="video/mp4">
+            Unfortunately, your browser does not support the video tag
+        </video>
+
+    <!--This section contains my profile image and a heading to welcome people to the page-->
+
+        <section id="intro-section">
+            <div id="intro-text-container">
+                <h2>Welcome! </h2>
+                <h4>Take a look around</h4>
+            </div>
+            <img id="headshot-img" src="/assets/eddie-headshot.jpeg" alt="Eddie's headshot">
+        </section>
+
+    <!--This section contains information about various services I can provide at various price tiers-->
+        <section id="services-section">
+            <h2>Services Provided</h2>
+            <div id="table-container">
+                <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Basic</th>
+                    <th>Standard</th>
+                    <th>Premium</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="table-row-label">Build Your Personal Landing Page</td>
+                    <td><i  class="fa fa-check" aria-hidden="true"></i></td>
+                    <td><i  class="fa fa-check" aria-hidden="true"></i></td>
+                    <td><i  class="fa fa-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <td class="table-row-label">Design Consultation</td>
+                    <td></td>
+                    <td><i  class="fa fa-check" aria-hidden="true"></i></td>
+                    <td><i  class="fa fa-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <td class="table-row-label">Continuous Deployment</td>
+                    <td></td>
+                    <td></td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                    <td class="table-row-label">24/7 Support</td>
+                    <td></td>
+                    <td></td>
+                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+        </section>
+    <!--This section contains the contact form-->
+        <section id="contact-section">
+            <h2>Contact me</h2>
+            <div id="contact-info-container">
+                <div class="icon-text-container">
+                    <i class='fas fa-map-marker-alt'></i>
+                    <span>Atlanta, Ga</span>
+                </div>
+                <div class="icon-text-container">
+                    <i class='fas fa-phone'></i>
+                    <span>706-244-1432</span>
+                </div>
+                <div class="icon-text-container">
+                    <i class="fa fa-envelope"></i>
+                    <span>zaboroskie.edward@gmail.com</span>
+                </div>
+            </div>
+            <div id="form-container">
+                <form class="form" action="/our_post_route" method="post">
+                    <div id="label-input-container">
+                        <label for="name-input">Name:</label>
+                        <input type="text" name="name" id="name-input" >
+                        <label for="email-input">Email:</label>
+                        <input type="text" name="email" id="email-input" >
+                    </div>
+                    <div id="message-input-container">
+                        <label for="message-input">Write me a message:</label>
+                        <textarea name="message" id="message-input" ></textarea>
+                    </div>
+                    <div id="submit-container">
+                        <input id="message-submit" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+    <!--This footer contains icons that function as links to external socials-->
+
+
+
+    <footer id="footer-container">
+        <a href="https://github.com/ezaboroskie"><i style="font-size: 24px" class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/edwardzaboroskie/"><i style="font-size: 24px" class="fa fa-linkedin"></i></a>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
