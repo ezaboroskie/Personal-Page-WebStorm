@@ -9,10 +9,13 @@ body{
     display:flex;
     flex-direction: column;
     background-color: white;
-    {-webkit-appearance: none;}
 }
 a{
     text-decoration: none;
+}
+input[type=submit]{
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
 }
 section{
     margin: 0;
@@ -251,9 +254,9 @@ a:visited, a:active {
         text-align: center;
         color: #ea6b31;
         text-shadow:
-                -1px -1px 0 #7a4127,
-                1px -1px 0 #7a4127,
-                -1px 1px 0 #7a4127,
+                -1px -1px 0 white,
+                1px -1px 0 white,
+                -1px 1px 0 white,
                 1px 1px 0 ;
     }
     #headshot-img{
