@@ -437,8 +437,6 @@ a:visited, a:active {
     #message-submit{
         background-color: #ea6b31;
         color: white;
-        width: 80px;
-        height: 40px;
         border: none;
         border-radius: 10px;
         font-size: 20px;
